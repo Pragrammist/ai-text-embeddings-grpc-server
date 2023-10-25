@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+message TextRequest
+{
+    string text = 1;
+}
+
+message VectorResponse
+{
+    repeated float vector = 1;
+}
+
+service VectorService
+{
+    rpc SendVector(stream TextRequest) returns (stream VectorResponse);
+}

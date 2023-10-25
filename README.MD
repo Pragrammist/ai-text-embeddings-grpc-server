@@ -1,0 +1,1 @@
+It is AI in grpc server. Embeddings encoder.
